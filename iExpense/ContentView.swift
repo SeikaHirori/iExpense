@@ -31,7 +31,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct new_tools_part_1: View {
-    @State private var user:User = User()
+    @StateObject var user:User = User()
     
     var body: some View {
         return VStack {

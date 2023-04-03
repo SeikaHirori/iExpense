@@ -16,7 +16,8 @@ struct iExpenseApp: App {
     }
 }
 
-class User {
+class User: ObservableObject {
     @Published var firstName: String = "Bilbo"
     @Published var lastName: String = "Baggins"
+
 }
