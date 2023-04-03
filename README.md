@@ -16,12 +16,12 @@ ______
 Project 7 Specifications:
 
 - Part 1: https://www.hackingwithswift.com/100/swiftui/36
-    - [x] iExpense: Introduction
-    - [ ] Why @State only works with structs
-    - [ ] Sharing SwiftUI state with @StateObject
-    - [ ] Showing and hiding views
-    - [ ] Deleting items using onDelete()
-    - [ ] Storing user settings with UserDefaults
-    - [ ] Archiving Swift objects with Codable
+    - [x] 1. iExpense: Introduction
+    - [x] 2. Why @State only works with structs
+    - [ ] 3. Sharing SwiftUI state with @StateObject
+    - [ ] 4. Showing and hiding views
+    - [ ] 5. Deleting items using onDelete()
+    - [ ] 6. Storing user settings with UserDefaults
+    - [ ] 7. Archiving Swift objects with Codable
 
 - Part 2: 
