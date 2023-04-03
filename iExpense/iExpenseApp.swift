@@ -17,6 +17,6 @@ struct iExpenseApp: App {
 }
 
 class User {
-    var firstName: String = "Bilbo"
-    var lastName: String = "Baggins"
+    @Published var firstName: String = "Bilbo"
+    @Published var lastName: String = "Baggins"
 }
