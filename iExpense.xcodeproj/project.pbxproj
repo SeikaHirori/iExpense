@@ -44,6 +44,8 @@
 		3F25EB0929D9691200FD1701 /* iExpenseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iExpenseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F25EB0D29D9691200FD1701 /* iExpenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseUITests.swift; sourceTree = "<group>"; };
 		3F25EB0F29D9691200FD1701 /* iExpenseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F40C6F129DB693D00C850DA /* rfer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = rfer.md; sourceTree = "<group>"; };
+		3F40C6F229DB694A00C850DA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,8 @@
 		3F25EAE629D9690F00FD1701 = {
 			isa = PBXGroup;
 			children = (
+				3F40C6F229DB694A00C850DA /* README.md */,
+				3F40C6F029DB692700C850DA /* _docs */,
 				3F25EAF129D9690F00FD1701 /* iExpense */,
 				3F25EB0229D9691200FD1701 /* iExpenseTests */,
 				3F25EB0C29D9691200FD1701 /* iExpenseUITests */,
@@ -125,6 +129,14 @@
 				3F25EB0F29D9691200FD1701 /* iExpenseUITestsLaunchTests.swift */,
 			);
 			path = iExpenseUITests;
+			sourceTree = "<group>";
+		};
+		3F40C6F029DB692700C850DA /* _docs */ = {
+			isa = PBXGroup;
+			children = (
+				3F40C6F129DB693D00C850DA /* rfer.md */,
+			);
+			path = _docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
