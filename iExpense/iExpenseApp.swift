@@ -16,7 +16,7 @@ struct iExpenseApp: App {
     }
 }
 
-struct User {
+class User {
     var firstName: String = "Bilbo"
     var lastName: String = "Baggins"
 }
