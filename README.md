@@ -24,4 +24,11 @@ Project 7 Specifications:
     - [x] 6. Storing user settings with UserDefaults
     - [x] 7. Archiving Swift objects with Codable
 
-- Part 2: 
+- Part 2: https://www.hackingwithswift.com/100/swiftui/37
+    - [] 1. Building a list we can delete from
+    - [] 2. Working with Identifiable items in SwiftUI
+    - [] 3. Sharing an observed object with a new view
+    - [] 4. Making changes permanent with UserDefaults
+    - [] 5. Final polish
+
+- Part 3: Challenges: https://www.hackingwithswift.com/books/ios-swiftui/iexpense-wrap-up
