@@ -88,6 +88,10 @@ struct new_tools_section_1_dot_5: View {
     var body: some View {
         return VStack {
             List {
+                if numbers.isEmpty {
+                    Text("meep")
+                }
+                
                 ForEach(numbers, id: \.self) {
                     Text("Row \($0)")
                 }
