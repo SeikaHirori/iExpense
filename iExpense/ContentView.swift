@@ -10,12 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         return VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-            
-            new_tools_part_1()
+            new_tools_section_1_dot_2()
             
         }
         .padding()
@@ -50,6 +45,30 @@ struct new_tools_part_1: View {
         }
         .padding()
     }
+}
 
+struct new_tools_section_1_dot_2: View {
+    
+    @State private var showingSheet = false
+    
+    var body: some View {
+        return VStack {
+            Button("Show Sheet") {
+                showingSheet.toggle()
+            }
+            .sheet(isPresented: $showingSheet) {
+                SecondView()
+            }
+        }
+    }
+    
+}
+
+struct SecondView: View {
+    var body: some View {
+        return VStack {
+            Text("Second View")
+        }
+    }
     
 }
