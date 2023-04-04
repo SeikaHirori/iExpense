@@ -22,6 +22,6 @@ Project 7 Specifications:
     - [x] 4. Showing and hiding views
     - [x] 5. Deleting items using onDelete()
     - [x] 6. Storing user settings with UserDefaults
-    - [ ] 7. Archiving Swift objects with Codable
+    - [x] 7. Archiving Swift objects with Codable
 
 - Part 2: 
