@@ -118,7 +118,7 @@ struct new_tools_section_1_dot_5: View {
 }
 
 struct new_tools_section_1_dot_6: View {
-    @State private var tapCount:Int = 0
+    @State private var tapCount:Int = UserDefaults.standard.integer(forKey: "Tap")
     
     var body: some View {
         return VStack{
@@ -126,6 +126,7 @@ struct new_tools_section_1_dot_6: View {
             Button("Tap to increase") {
                 tapCount += 1
                 
+                UserDefaults.standard.set(self.tapCount, forKey: "Tap")
             }
         }
     }
