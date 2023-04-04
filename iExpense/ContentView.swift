@@ -132,9 +132,11 @@ struct new_tools_section_1_dot_6: View {
 }
 
 struct new_tools_section_1_dot_7:View {
+    @State private var user:User_struct = User_struct(firstName: "Nanba", lastName: "Hori")
+    
     var body: some View {
         return VStack {
-            Text("Test :3")
+            Text("Test :3 | \(user.firstName) \(user.lastName)")
         }
     }
 }
