@@ -165,7 +165,18 @@ struct implementation: View {
             List {
                 
                 ForEach(expenses.items) { item in
-                    Text(item.name)
+                    HStack{
+                        VStack{
+                            Text(item.name)
+                                .font(.headline)
+                            Text(item.type)
+                        }
+                        
+                        Spacer()
+                        
+                        Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                        
+                    }
                 }
                 .onDelete(perform: removeItems)
             }
