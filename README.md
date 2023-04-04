@@ -21,7 +21,7 @@ Project 7 Specifications:
     - [x] 3. Sharing SwiftUI state with @StateObject
     - [x] 4. Showing and hiding views
     - [x] 5. Deleting items using onDelete()
-    - [ ] 6. Storing user settings with UserDefaults
+    - [x] 6. Storing user settings with UserDefaults
     - [ ] 7. Archiving Swift objects with Codable
 
 - Part 2: 
