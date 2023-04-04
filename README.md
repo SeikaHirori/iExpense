@@ -27,7 +27,7 @@ Project 7 Specifications:
 - Part 2: https://www.hackingwithswift.com/100/swiftui/37
     - [x] 1. Building a list we can delete from
     - [x] 2. Working with Identifiable items in SwiftUI
-    - [ ] 3. Sharing an observed object with a new view
+    - [x] 3. Sharing an observed object with a new view
     - [ ] 4. Making changes permanent with UserDefaults
     - [ ] 5. Final polish
 
