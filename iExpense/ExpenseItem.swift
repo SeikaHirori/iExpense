@@ -10,5 +10,11 @@ struct ExpenseItem: Identifiable {
 
 class Expenses: ObservableObject {
 
-    @Published var items:[ExpenseItem] = [ExpenseItem]()
+    @Published var items:[ExpenseItem] = [ExpenseItem]() {
+        didSet {
+            if let encoded = try? JSONEncoder().encode(items) {
+                UserDefaults.standard.set(encoded, forKey:"Items")
+            }
+        }
+    }
 }
