@@ -164,21 +164,47 @@ struct implementation: View {
         return NavigationStack {
             List {
                 
-                ForEach(expenses.items) { item in
-                    HStack{
-                        VStack{
-                            Text(item.name)
-                                .font(.headline)
-                            Text(item.type)
+                let personal:String = "Personal"
+                Section(personal) {
+                    ForEach(expenses.items) { item in
+                        if item.type == personal {
+                            HStack{
+                                VStack{
+                                    Text(item.name)
+                                        .font(.headline)
+                                    Text(item.type)
+                                }
+                                
+                                Spacer()
+                                
+                                Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                            }
+
                         }
-                        
-                        Spacer()
-                        
-                        Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
-                        
                     }
+                    .onDelete(perform: removeItems)
                 }
-                .onDelete(perform: removeItems)
+                
+                let business:String = "Business"
+                Section(business) {
+                    ForEach(expenses.items) { item in
+                        if item.type == "Business" {
+                            HStack{
+                                VStack{
+                                    Text(item.name)
+                                        .font(.headline)
+                                    Text(item.type)
+                                }
+                                
+                                Spacer()
+                                
+                                Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                            }
+
+                        }
+                    }
+                    .onDelete(perform: removeItems)
+                }
             }
             .navigationTitle("iExpense")
             .toolbar {
