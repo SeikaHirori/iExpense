@@ -164,7 +164,7 @@ struct implementation: View {
                 if expenses.items.isEmpty{
                     Text("meep")
                 }
-                ForEach(expenses.items, id: \.id) { item in
+                ForEach(expenses.items) { item in
                     Text(item.name)
                 }
                 .onDelete(perform: removeItems)
