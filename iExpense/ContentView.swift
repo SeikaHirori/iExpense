@@ -67,9 +67,15 @@ struct new_tools_section_1_dot_2: View {
 struct SecondView: View {
     let name: String
     
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         return VStack {
             Text("Hello, \(name)")
+            
+            Button("Dismiss") {
+                dismiss()
+            }
         }
     }
     
