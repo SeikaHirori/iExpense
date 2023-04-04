@@ -91,6 +91,7 @@ struct new_tools_section_1_dot_5: View {
                 ForEach(numbers, id: \.self) {
                     Text("Row \($0)")
                 }
+                .onDelete(perform: removeRows)
             }
             
             Button("Add Number :3") {
@@ -98,6 +99,10 @@ struct new_tools_section_1_dot_5: View {
                 currentNumber += 1
             }
         }
+    }
+    
+    func removeRows(at offsets: IndexSet) {
+        numbers.remove(atOffsets: offsets)
     }
     
 }
