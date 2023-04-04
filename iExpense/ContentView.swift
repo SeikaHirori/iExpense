@@ -163,9 +163,7 @@ struct implementation: View {
     var body: some View {
         return NavigationStack {
             List {
-                if expenses.items.isEmpty{
-                    Text("meep")
-                }
+                
                 ForEach(expenses.items) { item in
                     Text(item.name)
                 }
