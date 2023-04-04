@@ -28,8 +28,8 @@ struct AddView: View {
                 }
                 .pickerStyle(.automatic)
                 
-                TextField("Amount", value: $amount, format: .currency(code: "USD"))
-                    .keyboardType(.decimalPad)
+                TextField("Amount", value: $amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                    .keyboardType(.decimalPad) // RFER #1
                 
             }
             .navigationTitle("Add new expense")
