@@ -35,10 +35,18 @@ struct new_tools_part_1: View {
     
     var body: some View {
         return VStack {
-            Text("Your name is \(user.firstName) \(user.lastName)")
+            List {
+                Section {
+                    Text("Your name is \(user.firstName) \(user.lastName)")
+                    
+                }
             
-            TextField("First name", text: $user.firstName)
-            TextField("Last name", text: $user.lastName)
+                Section {
+                    TextField("First name", text: $user.firstName)
+                    TextField("Last name", text: $user.lastName)
+                }
+                
+            }
         }
         .padding()
     }
