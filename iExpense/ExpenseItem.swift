@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ExpenseItem {
+struct ExpenseItem: Identifiable {
 
     let id: UUID = UUID()
     let name: String
