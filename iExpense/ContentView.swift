@@ -86,22 +86,29 @@ struct new_tools_section_1_dot_5: View {
     @State private var currentNumber:Int = 1
     
     var body: some View {
-        return VStack {
-            List {
-                if numbers.isEmpty {
-                    Text("meep")
+        return NavigationView {
+        
+            VStack {
+                List {
+                    if numbers.isEmpty {
+                        Text("meep")
+                    }
+                    
+                    ForEach(numbers, id: \.self) {
+                        Text("Row \($0)")
+                    }
+                    .onDelete(perform: removeRows)
                 }
                 
-                ForEach(numbers, id: \.self) {
-                    Text("Row \($0)")
+                Button("Add Number :3") {
+                    numbers.append(currentNumber)
+                    currentNumber += 1
                 }
-                .onDelete(perform: removeRows)
+            }
+            .toolbar {
+                EditButton()
             }
             
-            Button("Add Number :3") {
-                numbers.append(currentNumber)
-                currentNumber += 1
-            }
         }
     }
     
