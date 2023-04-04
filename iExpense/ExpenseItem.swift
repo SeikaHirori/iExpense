@@ -1,8 +1,8 @@
 import SwiftUI
 
-struct ExpenseItem: Identifiable {
+struct ExpenseItem: Identifiable, Codable {
 
-    let id: UUID = UUID()
+    var id: UUID = UUID()
     let name: String
     let type: String
     let amount: Double
