@@ -15,6 +15,7 @@
 		3F25EB0E29D9691200FD1701 /* iExpenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25EB0D29D9691200FD1701 /* iExpenseUITests.swift */; };
 		3F25EB1029D9691200FD1701 /* iExpenseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25EB0F29D9691200FD1701 /* iExpenseUITestsLaunchTests.swift */; };
 		3F83D08229DC238700ADAEB4 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F83D08129DC238700ADAEB4 /* ExpenseItem.swift */; };
+		3F83D08429DC2CE400ADAEB4 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F83D08329DC2CE400ADAEB4 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		3F40C6F129DB693D00C850DA /* rfer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = rfer.md; sourceTree = "<group>"; };
 		3F40C6F229DB694A00C850DA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3F83D08129DC238700ADAEB4 /* ExpenseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		3F83D08329DC2CE400ADAEB4 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		3F25EAF129D9690F00FD1701 /* iExpense */ = {
 			isa = PBXGroup;
 			children = (
+				3F83D08329DC2CE400ADAEB4 /* AddView.swift */,
 				3F25EAF229D9690F00FD1701 /* iExpenseApp.swift */,
 				3F83D08129DC238700ADAEB4 /* ExpenseItem.swift */,
 				3F25EAF429D9690F00FD1701 /* ContentView.swift */,
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F83D08429DC2CE400ADAEB4 /* AddView.swift in Sources */,
 				3F25EAF529D9690F00FD1701 /* ContentView.swift in Sources */,
 				3F83D08229DC238700ADAEB4 /* ExpenseItem.swift in Sources */,
 				3F25EAF329D9690F00FD1701 /* iExpenseApp.swift in Sources */,
