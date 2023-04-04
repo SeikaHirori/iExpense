@@ -29,6 +29,6 @@ Project 7 Specifications:
     - [x] 2. Working with Identifiable items in SwiftUI
     - [x] 3. Sharing an observed object with a new view
     - [x] 4. Making changes permanent with UserDefaults
-    - [ ] 5. Final polish
+    - [x] 5. Final polish
 
 - Part 3: Challenges: https://www.hackingwithswift.com/books/ios-swiftui/iexpense-wrap-up
