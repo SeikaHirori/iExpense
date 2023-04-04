@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         return VStack {
-            new_tools_section_1_dot_5()
+            new_tools_section_1_dot_6()
             
         }
         .padding()
@@ -114,6 +114,16 @@ struct new_tools_section_1_dot_5: View {
     
     func removeRows(at offsets: IndexSet) {
         numbers.remove(atOffsets: offsets)
+    }
+}
+
+struct new_tools_section_1_dot_6: View {
+    
+    
+    var body: some View {
+        return VStack{
+            Text("Hello :3")
+        }
     }
     
 }
