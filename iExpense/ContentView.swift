@@ -156,19 +156,27 @@ struct User_struct: Codable {
 }
 
 struct implementation: View {
-    @StateObject var expense: Expenses = Expenses()
+    @StateObject var expenses: Expenses = Expenses()
     
     var body: some View {
         return NavigationStack {
             List {
-                if expense.items.isEmpty{
+                if expenses.items.isEmpty{
                     Text("meep")
                 }
-                ForEach(expense.items, id: \.name) { item in
+                ForEach(expenses.items, id: \.name) { item in
                     Text(item.name)
                 }
             }
             .navigationTitle("iExpense")
+            .toolbar {
+                Button {
+                    let expense = ExpenseItem(name: "Test", type: "Personal", amount: 5)
+                    expenses.items.append(expense)
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
         }
     }
 }
