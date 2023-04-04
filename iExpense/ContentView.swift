@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         return VStack {
-            new_tools_section_1_dot_4()
+            new_tools_section_1_dot_5()
             
         }
         .padding()
@@ -25,7 +25,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct new_tools_part_1: View {
+struct new_tools_section_1_dot_1: View {
     @StateObject var user:User = User()
     
     var body: some View {
@@ -75,6 +75,27 @@ struct SecondView: View {
             
             Button("Dismiss") {
                 dismiss()
+            }
+        }
+    }
+    
+}
+
+struct new_tools_section_1_dot_5: View {
+    @State private var numbers = [Int]()
+    @State private var currentNumber:Int = 1
+    
+    var body: some View {
+        return VStack {
+            List {
+                ForEach(numbers, id: \.self) {
+                    Text("Row \($0)")
+                }
+            }
+            
+            Button("Add Number :3") {
+                numbers.append(currentNumber)
+                currentNumber += 1
             }
         }
     }
