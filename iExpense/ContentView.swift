@@ -158,6 +158,8 @@ struct User_struct: Codable {
 struct implementation: View {
     @StateObject var expenses: Expenses = Expenses()
     
+    @State private var showingAddExpense = false
+    
     var body: some View {
         return NavigationStack {
             List {
@@ -178,6 +180,9 @@ struct implementation: View {
                     Image(systemName: "plus")
                 }
             }
+        }
+        .sheet(isPresented: $showingAddExpense) {
+            AddView()
         }
     }
     
