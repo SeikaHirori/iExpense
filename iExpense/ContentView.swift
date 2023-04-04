@@ -178,6 +178,7 @@ struct implementation: View {
                                 Spacer()
                                 
                                 Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                                    .moneyAmount(amount: item.amount)
                             }
 
                         }
@@ -187,6 +188,7 @@ struct implementation: View {
                 
                 let business:String = "Business"
                 Section(business) {
+                    
                     ForEach(expenses.items) { item in
                         if item.type == "Business" {
                             HStack{
@@ -199,11 +201,14 @@ struct implementation: View {
                                 Spacer()
                                 
                                 Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                                    .moneyAmount(amount: item.amount)
                             }
 
                         }
                     }
                     .onDelete(perform: removeItems)
+                    
+
                 }
             }
             .navigationTitle("iExpense")
@@ -224,4 +229,19 @@ struct implementation: View {
         expenses.items.remove(atOffsets: offsets)
     }
     
+}
+
+struct MoneyAmount: ViewModifier {
+    let amount:Double
+    
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(amount <= 10 ? .green : amount >= 100 ? .red : .primary) // RFER #2
+    }
+}
+
+extension View {
+    func moneyAmount(amount: Double) -> some View {
+        modifier(MoneyAmount(amount: amount))
+    }
 }

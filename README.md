@@ -33,7 +33,7 @@ Project 7 Specifications:
 
 - Part 3: Challenges: https://www.hackingwithswift.com/books/ios-swiftui/iexpense-wrap-up
     - [x] 1. Use the user’s preferred currency, rather than always using US dollars.
-    - [ ] 2. Modify the expense amounts in ContentView to contain some styling depending on their value – expenses under $10 should have one style, expenses under $100 another, and expenses over $100 a third style. What those styles are depend on you.
+    - [x] 2. Modify the expense amounts in ContentView to contain some styling depending on their value – expenses under $10 should have one style, expenses under $100 another, and expenses over $100 a third style. What those styles are depend on you.
     - [x] 3. For a bigger challenge, try splitting the expenses list into two sections: one for personal expenses, and one for business expenses. This is tricky for a few reasons, not least because it means being careful about how items are deleted!
             - I think it works? Not sure how to properly test this.
             - Currently lacking smooth way to hide sections if a type (e.g. personal) is not in the list.
