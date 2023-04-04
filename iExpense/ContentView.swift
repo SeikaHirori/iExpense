@@ -182,7 +182,7 @@ struct implementation: View {
             }
         }
         .sheet(isPresented: $showingAddExpense) {
-            AddView()
+            AddView(expenses: expenses)
         }
     }
     
