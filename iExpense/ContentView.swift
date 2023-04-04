@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         return VStack {
-            new_tools_section_1_dot_2()
+            new_tools_section_1_dot_4()
             
         }
         .padding()
@@ -47,7 +47,7 @@ struct new_tools_part_1: View {
     }
 }
 
-struct new_tools_section_1_dot_2: View {
+struct new_tools_section_1_dot_4: View {
     
     @State private var showingSheet = false
     
