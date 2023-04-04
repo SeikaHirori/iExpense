@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         return VStack {
-            new_tools_section_1_dot_6()
+            new_tools_section_1_dot_7()
             
         }
         .padding()
@@ -129,4 +129,17 @@ struct new_tools_section_1_dot_6: View {
         }
     }
     
+}
+
+struct new_tools_section_1_dot_7:View {
+    var body: some View {
+        return VStack {
+            Text("Test :3")
+        }
+    }
+}
+
+struct User_struct: Codable {
+    let firstName: String
+    let lastName: String
 }
