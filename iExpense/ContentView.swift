@@ -57,7 +57,7 @@ struct new_tools_section_1_dot_2: View {
                 showingSheet.toggle()
             }
             .sheet(isPresented: $showingSheet) {
-                SecondView()
+                SecondView(name: "二")
             }
         }
     }
@@ -65,9 +65,11 @@ struct new_tools_section_1_dot_2: View {
 }
 
 struct SecondView: View {
+    let name: String
+    
     var body: some View {
         return VStack {
-            Text("Second View")
+            Text("Hello, \(name)")
         }
     }
     
